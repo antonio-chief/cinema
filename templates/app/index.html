@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Booking</title>
+<style>
+    /*Styles for background image */
+    body {
+        background-image: url("https://th.bing.com/th/id/OIP.BMFnYR7KfraeTydOvx7z3QHaEs?w=286&h=182&c=7&r=0&o=5&pid=1.7");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        color: white; /* Text color */
+        font-family: Arial, sans-serif; /* Font family */
+    }
+
+    /* Styles for movie boxes */
+    .movie-box {
+        width: 300px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 20px;
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+    }
+
+    .movie-box img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; /* Rounded corners for the image */
+    }
+
+    .movie-details {
+        margin-top: 10px;
+    }
+
+    .movie-title {
+        font-weight: bold;
+        color: #ffcc00; /* Movie title color */
+    }
+
+    .movie-description {
+        color: #ff9900; /* Movie description color */
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .button button {
+        background-color: #00cc00; /* Green button color */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .button button:hover {
+        background-color: #009900; /* Darker green on hover */
+    }
+</style>
+</head>
+<body>
+
+<div class="movie-box">
+    <img src="https://th.bing.com/th/id/OIP._8kYNl1N2PDEhAqDfxkNBAHaK-?w=198&h=294&c=7&r=0&o=5&pid=1.7" alt="Movie 1">
+    <div class="movie-details">
+        <div class="movie-title">Godzilla x Kong: The New Empire</div>
+        <div class="movie-description">Description: A thrilling showdown between two iconic monsters.</div>
+        <br>
+        <div class="button">
+            <button onclick="showMessage()">Book</button>
+        </div>
+    </div>
+</div>
+
+<div class="movie-box">
+    <img src="https://th.bing.com/th/id/OIP.MZNIfp4GWFAVzxtQejkvMQHaK-?w=120&h=180&c=7&r=0&o=5&pid=1.7" alt="Movie 2">
+    <div class="movie-details">
+        <div class="movie-title">Aquaman and the Lost Kingdom</div>
+        <div class="movie-description">Description: Aquaman embarks on a quest to find the lost kingdom.</div>
+        <br>
+        <div class="button">
+            <button onclick="showMessage()">Book</button>
+        </div>
+    </div>
+</div>
+
+<div class="movie-box">
+    <img src="https://th.bing.com/th/id/OIP.QJAYk6-9oog5uJqyx16MkwHaKx?w=124&h=182&c=7&r=0&o=5&pid=1.7" alt="Movie 3">
+    <div class="movie-details">
+        <div class="movie-title">Dune: Part Two</div>
+        <div class="movie-description">Description: The saga continues as humanity fights for survival on a hostile planet.</div>
+        <br>
+        <div class="button">
+            <button onclick="showMessage()">Book</button>
+        </div>
+    </div>
+</div>
+
+<div class="movie-box">
+    <img src="https://th.bing.com/th/id/OIF.cwmJzVAAtZ4oa3QEifnp0A?w=115&h=180&c=7&r=0&o=5&pid=1.7">
+    <div class="movie-details">
+        <div class="movie-title">Kingdom of the Planet of the Apes</div>
+        <div class="movie-description">Several generations in the future following Caesar's reign, apes are now the dominant species and live harmoniously while humans have been reduced to living in the shadows.</div>
+        <br>
+        <div class="button">
+            <button onclick="showMessage()">Book</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showMessage() {
+        alert("Added successfully");
+    }
+</script>
+
+</body>
+</html>
